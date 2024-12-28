@@ -12,6 +12,15 @@ Highlights:
 - 🐞 Error handling both on the server and on the client
 - ⏳ And much more!
 
+### Setup .env file
+
+```js
+PORT=1337
+MOGODB_CONNECTTION_URL=
+
+NODE_ENV=development
+```
+
 ### Run the app
 
 ```shell
