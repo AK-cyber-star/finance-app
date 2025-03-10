@@ -27,11 +27,26 @@ const Navbbar = () => {
 
       {/* Right part */}
       <FlexBetween gap="2rem">
-        <Box 
+        <Box
           sx={{ "&:hover" : { color: palette.primary[100] } }}
         >
           <Link
             to="/"
+            onClick={() => setSelected("home")}
+            style={{
+              color: selected === "home" ? "inherit" : palette.grey[700],
+              textDecoration: "inherit"
+            }}
+          >
+            Home
+          </Link>
+        </Box>
+
+        <Box 
+          sx={{ "&:hover" : { color: palette.primary[100] } }}
+        >
+          <Link
+            to="/dashboard"
             onClick={() => setSelected("dashboard")}
             style={{
               color: selected === "dashboard" ? "inherit" : palette.grey[700],

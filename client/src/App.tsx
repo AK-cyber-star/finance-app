@@ -7,6 +7,9 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "@/scenes/navbar";
 import Dashboard from "@/scenes/dashboard";
 import Prediction from "@/scenes/predictions";
+import Home from "./scenes/Home";
+import Header from "./components/Header";
+import Contact from "./scenes/Contact";
 
 const App = () => {
 
@@ -17,10 +20,11 @@ const App = () => {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Box width="100%" height="100%" padding="1rem 2rem 4rem 2rem">
-          <Navbar />
           <Routes>
-            <Route path="/" element={<Dashboard />}/>
-            <Route path="/predictions" element={<Prediction />}/>
+            <Route path="/" element={<><Header on="home" /><Home /></>}/>
+            <Route path="/contact" element={<><Header on="contact" /><Contact /></>}/>
+            <Route path="/dashboard" element={<><Navbar /><Dashboard /></>}/>
+            <Route path="/predictions" element={<><Navbar /><Prediction /></>}/>
           </Routes>
         </Box>
       </ThemeProvider>

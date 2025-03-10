@@ -1,0 +1,53 @@
+/* Moving Testimonials */
+.testimonialsWrapper {
+    overflow: hidden;
+}
+.testimonialsWrapper h2{
+    font-size: 3rem;
+    color: white;
+}
+
+.testimonials {
+    display: flex;
+    width: 200%;
+    gap: 20px;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.testimonial {
+    background: #2d2d34;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 0 0 25%;
+    min-width: 250px;
+}
+
+.testimonial h3 {
+    font-size: 1.5rem;
+    color: #f2b455;
+    margin-bottom: 8px;
+}
+
+.testimonialImg {
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonialImg:hover {
+    cursor: pointer;
+}
+.testimonial p {
+    font-size: 1rem;
+    color: #e1e2e7;
+}
+
+@media screen and (max-width: 648px) {
+    .testimonialsWrapper h2{
+        font-size: 2rem;
+    }
+}

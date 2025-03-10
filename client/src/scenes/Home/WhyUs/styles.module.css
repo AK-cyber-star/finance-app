@@ -1,0 +1,73 @@
+.whyUse {
+    background-color: #1f2026; /* Dark background */
+    color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  /* Header Section */
+  .whyContent {
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+  }
+  
+  .whyContent h2 {
+    font-size: 2.5rem;
+    color: #12efc8; /* Primary color */
+    margin-bottom: 10px;
+  }
+  
+  .whyContent p {
+    font-size: 1.2rem;
+    color: #e1e2e7;
+  }
+  
+  /* Features Grid */
+  .featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Feature Cards */
+  .featureCard {
+    background: #2d2d34; /* Slightly lighter background */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .featureCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Feature Icons */
+  .icon {
+    margin-bottom: 15px;
+    color: #f2b455; /* Secondary color */
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .whyContent h2 {
+      font-size: 2rem;
+    }
+    .whyContent p {
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .featureCard:nth-child(4) {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      justify-self: center; /* Center align the card */
+    }
+  }
+  

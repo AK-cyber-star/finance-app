@@ -1,0 +1,137 @@
+:root {
+    /* Grey Shades */
+    --grey-100: #f0f0f3;
+    --grey-200: #e1e2e7;
+    --grey-300: #d1d3da;
+    --grey-400: #c2c5ce;
+    --grey-500: #b3b6c2;
+    --grey-600: #8f929b;
+    --grey-700: #6b6d74;
+    --grey-800: #48494e;
+    --grey-900: #242427;
+  
+    /* Primary (Light Green) */
+    --primary-100: #d0fcf4;
+    --primary-200: #a0f9e9;
+    --primary-300: #71f5de;
+    --primary-400: #41f2d3;
+    --primary-500: #12efc8;
+    --primary-600: #0ebfa0;
+    --primary-700: #0b8f78;
+    --primary-800: #076050;
+    --primary-900: #043028;
+  
+    /* Secondary (Yellow) */
+    --secondary-100: #fcf0dd;
+    --secondary-200: #fae1bb;
+    --secondary-300: #f7d299;
+    --secondary-400: #f5c377;
+    --secondary-500: #f2b455;
+    --secondary-600: #c29044;
+    --secondary-700: #916c33;
+    --secondary-800: #614822;
+    --secondary-900: #302411;
+  
+    /* Tertiary (Purple) */
+    --tertiary-500: #8884d8;
+  
+    /* Background */
+    --background-light: #2d2d34;
+    --background-main: #1f2026;
+  }
+
+.heroSection {
+    height: 60dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heroContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 900px;
+}
+
+.HeroPrimaryText {
+    color: var(--primary-600);
+    font-size: 4rem;
+    text-align: center;
+}
+
+.heroSpan {
+    color: var(--primary-300);
+}
+.heroP {
+    color: var(--grey-200);
+    margin-top: -50px;
+    text-align: center;
+}
+
+.viewDemoBtn button {
+    display: flex;
+    align-items: center; /* Align text and icon */
+    gap: 8px; /* Space between text and icon */
+    padding: 12px 24px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--secondary-500);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--secondary-900);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .viewDemoBtn button:hover {
+    background-color: var(--secondary-400);
+    cursor: pointer;
+  }
+  
+  .forwardIcon {
+    font-size: 20px; /* Adjust size */
+  }
+  
+
+@media screen and (max-width: 480px) {
+    .HeroPrimaryText {
+        font-size: 2.2rem;
+    }
+
+    .heroP {
+        margin-top: 0;
+    }
+}
+
+.whyUse {
+    background-color: #1f2026;
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin-top: 8%;
+}
+
+.whyContent {
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+.whyContent h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.whyContent p {
+    font-size: 1.2rem;
+    color: #e1e2e7;
+}
+
+/* Moving Profile Icon */
+.profileIcon {
+    margin: 20px auto;
+}

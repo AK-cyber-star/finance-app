@@ -1,0 +1,100 @@
+/* Pricing Section */
+.pricingSection {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #1f2026;
+    color: #ffffff;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    color: #12efc8; /* Primary color */
+    margin-bottom: 20px;
+  }
+  
+  /* Pricing Cards Container */
+  .cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Individual Card */
+  .card {
+    background: #2d2d34;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Most Popular Card */
+  .popular {
+    border: 2px solid #f2b455;
+    position: relative;
+  }
+  
+  .badge {
+    background: #f2b455;
+    color: #1f2026;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 8px;
+  }
+  
+  /* Price Styling */
+  .price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #12efc8;
+    margin: 10px 0;
+  }
+  
+  .price span {
+    font-size: 1rem;
+    color: #e1e2e7;
+  }
+  
+  /* Features List */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #e1e2e7;
+  }
+  
+  /* CTA Button */
+  .ctaButton {
+    margin-top: 15px;
+    padding: 12px 24px;
+    border-radius: 10px;
+    border: none;
+    background-color: #12efc8;
+    font-weight: bold;
+    color: #1f2026;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .ctaButton:hover {
+    background-color: #0ebfa0;
+  }
+  
+  @media (max-width: 768px) {
+    .heading {
+      font-size: 2rem;
+    }
+  }
