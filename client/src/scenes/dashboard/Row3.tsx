@@ -16,8 +16,6 @@ const Row3 = () => {
   const { data: productData } = useGetProductsQuery();
   const { data: transactionData } = useGetTransactionsQuery();
 
-  console.log("KPI DATA =>", kpiData);
-
   const pieChartData = useMemo(() => {
     if (kpiData) {
       const totalExpenses = kpiData[0].totalExpenses;
@@ -37,9 +35,6 @@ const Row3 = () => {
       );
     }
   }, [kpiData]);
-
-  console.log("Pie chart data => ", pieChartData);
-  
 
   const productColumns = [
     {
